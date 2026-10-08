@@ -1,0 +1,36 @@
+# Makefile for the optimized (NLopt-based) version: MySweeD
+
+CC = gcc
+CFLAGS = -Wall -g -O3 -fcommon -fopenmp -Wno-implicit-function-declaration -Wno-int-conversion -std=gnu89 -w     
+# -lnlopt provides the optimizer, -lblas provides ddot_ used elsewhere
+LIBRARIES = -lm -lblas -lnlopt
+
+EXECNAME = MySweeD
+
+OBJS = SweeD.o SweeD_Input.o SweeD_Kernel.o SweeD_SFS.o SweeD_CLR.o My_SweeD_BFGS.o
+
+all: $(EXECNAME)
+
+$(EXECNAME): $(OBJS)
+	$(CC) $(CFLAGS) -o $(EXECNAME) $(OBJS) $(LIBRARIES)
+
+SweeD.o: SweeD.c
+	$(CC) $(CFLAGS) -c SweeD.c
+
+SweeD_Input.o: SweeD_Input.c
+	$(CC) $(CFLAGS) -c SweeD_Input.c
+
+SweeD_Kernel.o: SweeD_Kernel.c
+	$(CC) $(CFLAGS) -c SweeD_Kernel.c
+
+SweeD_SFS.o: SweeD_SFS.c
+	$(CC) $(CFLAGS) -c SweeD_SFS.c
+
+SweeD_CLR.o: SweeD_CLR.c
+	$(CC) $(CFLAGS) -c SweeD_CLR.c
+
+My_SweeD_BFGS.o: My_SweeD_BFGS.c
+	$(CC) $(CFLAGS) -c My_SweeD_BFGS.c
+
+clean:
+	rm -f $(EXECNAME) $(OBJS)

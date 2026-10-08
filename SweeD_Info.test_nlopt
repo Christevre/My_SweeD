@@ -1,0 +1,39 @@
+
+
+                                      _______________
+
+                                           SweeD
+                                      _______________
+
+
+
+ SweeD version 4.0.0 released by Nikolaos Alachiotis and Pavlos Pavlidis in July 2018.
+ Code contributions by Antonis Kioukis and Aggelos Koropoulis.
+
+
+ Command:
+
+	 ./MySweeD -name test_nlopt -input mytest.sf -grid 50
+
+
+
+ Input file format (0:ms, 1:fasta, 2:macs, 3:vcf, 4:sf, 5:mbs): 4
+ Alignment 1
+
+		Sequences:		100
+		Sites:			5773
+		Discarded sites:	0
+		Kept sites:	5773
+
+		Processing:		0.14 seconds
+
+		Position:		7.548000e+05
+		Likelihood:		2.960708e+00
+		StartPos:		7.548000e+05
+		EndPos:			7.549000e+05
+		Alpha:			2.230322e+01
+
+
+ Total elapsed time 0.14 seconds.
+
+

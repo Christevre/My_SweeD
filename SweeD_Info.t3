@@ -1,0 +1,39 @@
+
+
+                                      _______________
+
+                                           SweeD
+                                      _______________
+
+
+
+ SweeD version 4.0.0 released by Nikolaos Alachiotis and Pavlos Pavlidis in July 2018.
+ Code contributions by Antonis Kioukis and Aggelos Koropoulis.
+
+
+ Command:
+
+	 ./MySweeD -name t3 -input test3.sf -grid 40
+
+
+
+ Input file format (0:ms, 1:fasta, 2:macs, 3:vcf, 4:sf, 5:mbs): 4
+ Alignment 1
+
+		Sequences:		50
+		Sites:			37
+		Discarded sites:	0
+		Kept sites:	37
+
+		Processing:		0.02 seconds
+
+		Position:		3.846000e+03
+		Likelihood:		5.019592e-01
+		StartPos:		0.000000e+00
+		EndPos:			6.000000e+03
+		Alpha:			2.914059e-03
+
+
+ Total elapsed time 0.02 seconds.
+
+

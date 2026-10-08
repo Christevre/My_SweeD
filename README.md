@@ -1,1 +1,2 @@
-My_SweeD
+# sweed
+Likelihood-based Selective Sweep Detection
